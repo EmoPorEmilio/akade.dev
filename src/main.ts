@@ -1,8 +1,9 @@
 import './style.css'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-      <img src="/logo.png" class="logo vanilla" alt="Akade logo" />
-    </a>
+document.querySelector<HTMLDivElement>('body')!.innerHTML = `
+<main>
+  <div class="logo-container">
+      <img src="/logo.png" class="logo" alt="Akade logo" />
   </div>
+</main>
 `

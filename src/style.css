@@ -1,11 +1,9 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Jost, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,34 +11,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  min-height: 100%;
+}
 body {
+  background-color: #141414;
+  height: 100vh;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+main {
+  display: flex; /* Make main a flex container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100vh;
+  width: 100vw; /* Ensure main takes full width */
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  display: flex;
+  align-self: center;
   will-change: filter;
   transition: filter 300ms;
+  border-radius: 100%;
+  object-fit: contain;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 0.1em #DF5C9A);
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center the logo inside the container */
+  align-items: center; /* Center the logo inside the container */
+  height: 100%;
+  width: 100%; /* Ensure logo-container takes full width */
 }
